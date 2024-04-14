@@ -1,0 +1,8 @@
+name: Simpleworkdflow
+on : workflow_dispatch
+jobs:
+  firstJob :
+   runs-on: ubuntu-latest
+   steps:
+   - name : print hellowrld
+     run: echo "Hello World!"
