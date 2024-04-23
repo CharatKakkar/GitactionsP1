@@ -6,12 +6,12 @@ jobs:
    steps:
    - name : Dont print match
      run: |
-         if [ Contains("abcd" == "abc") ]; then
+          if ${{ contains('abcd', 'abc') }}; then
             echo "Match"
           fi
-   - name : print match 
+
+   - name: print match 
      run: |
-        if [ Contains("abcd" == "abcd") ]; then
+            if ${{ contains('abcd', 'abcd') }}; then
             echo "Match"
-          fi
-     
+            fi
