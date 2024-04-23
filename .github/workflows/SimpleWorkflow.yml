@@ -6,10 +6,12 @@ jobs:
    steps:
    - name : Dont print match
      run: |
-      if ("abcd" == "abc")
-        echo "Match"
+         if [ "abcd" == "abc" ]; then
+            echo "Match"
+          fi
    - name : print match 
      run: |
-      if ("abcd" == "abcd")
-        echo "Match"
+        if [ "abcd" == "abcd" ]; then
+            echo "Match"
+          fi
      
