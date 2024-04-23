@@ -4,5 +4,12 @@ jobs:
   firstJob :
    runs-on: ubuntu-latest
    steps:
-   - name : print hellowrld
-     run: echo "Hello World!"
+   - name : Dont print match
+     run: |
+      if ("abcd" == "abc")
+        echo "Match"
+   - name : print match 
+     run: |
+      if ("abcd" == "abcd")
+        echo "Match"
+     
