@@ -6,12 +6,12 @@ jobs:
    steps:
    - name : Dont print match
      run: |
-         if [ "abcd" == "abc" ]; then
+         if [ Contains("abcd" == "abc") ]; then
             echo "Match"
           fi
    - name : print match 
      run: |
-        if [ "abcd" == "abcd" ]; then
+        if [ Contains("abcd" == "abcd") ]; then
             echo "Match"
           fi
      
