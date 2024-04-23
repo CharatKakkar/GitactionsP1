@@ -6,7 +6,8 @@ jobs:
    steps:
    - name : Dont print match
      run: |
-          if ${{ contains("abcd", "abc") }}; then
+          echo ${{ github.repo.name}}
+          if ${{ contains('abcd', 'bc') }}; then
             echo "Match"
           fi
 
