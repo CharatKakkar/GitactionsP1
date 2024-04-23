@@ -13,6 +13,6 @@ jobs:
 
    - name: print match 
      run: |
-            if ${{ contains(github.repository, "actions") }}; then
+            if ${{ contains(github.repository, 'actions') }}; then
             echo "Match"
             fi
