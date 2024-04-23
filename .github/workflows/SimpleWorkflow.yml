@@ -6,7 +6,7 @@ jobs:
    steps:
    - name : Dont print match
      run: |
-          if ${{ contains('abcd', 'abc') }}; then
+          if ${{ contains("abcd", "abc") }}; then
             echo "Match"
           fi
 
