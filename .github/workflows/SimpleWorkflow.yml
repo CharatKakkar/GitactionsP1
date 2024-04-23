@@ -7,12 +7,12 @@ jobs:
    - name : Dont print match
      run: |
           echo "Repository Name: ${{ github.repository }}"
-          if ${{ contains('abcd', 'bc') }}; then
+          if ${{ contains(github.repository, 'actions') }}; then
             echo "Match"
           fi
 
    - name: print match 
      run: |
-            if ${{ contains('abcd', 'abcd') }}; then
+            if ${{ contains(github.repository, "actions") }}; then
             echo "Match"
             fi
