@@ -1,9 +1,16 @@
 name: Simpleworkdflow
 on : workflow_dispatch
 jobs:
+  checkout:
+   runs-on: ubuntu-latest
+   steps:
+    - name : get code
+      uses: actions/checkout@v3
+  
   firstJob :
    runs-on: ubuntu-latest
    steps:
+   
    - name : Dont print match
      run: |
           echo "Repository Name: ${{ github.repository }}"
